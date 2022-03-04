@@ -1,8 +1,8 @@
 num = "978014300723"
-digits = num.split('')
+number_arr = num.split('')
 count = 1
 sum = 0
-digits.each do | n |
+number_arr.each do | n |
   if count % 2 == 0
     sum = sum + (n.to_i * 3)
   else
@@ -11,6 +11,6 @@ digits.each do | n |
   count+= 1
 end
 mod = sum % 10
-last_digit = 10 - mod
-num << last_digit.to_s
+last_digit_derived = 10 - mod
+num << last_digit_derived.to_s
 puts num
